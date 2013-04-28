@@ -9,8 +9,8 @@ BACKENDS =
 		host: 'localhost'
 		port: process.env.PORT or argv.port or 9294
 	API:
-		host: 'api.go-versus.com'
-		port: 4001
+		host: 'dev.nuesbyte.com'
+		port: 4000
 
 	
 getBackendForRequest = (req) ->
