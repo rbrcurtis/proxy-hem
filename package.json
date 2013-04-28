@@ -1,24 +1,29 @@
-{ 
+{
   "name": "proxy-hem",
-  "description": "All the awesome of HEM with a proxy for any API urls", 
-  "version": "0.0.1", 
-  "author": "brec-c", 
-  "licenses":
-    [{ 
-      "type": "MIT", 
+  "description": "All the awesome of HEM with a proxy for any API urls",
+  "version": "0.0.1",
+  "author": "brec-c",
+  "licenses": [
+    {
+      "type": "MIT",
       "url": "https://github.com/brec-c/proxy-hem/blob/master/LICENSE"
-    }], 
-  "repository": { 
-    "type" : "git", 
+    }
+  ],
+  "repository": {
+    "type": "git",
     "url": "http://github.com/brec-c/proxy-hem.git"
-  }, 
-  "engine" : [ "node >=0.1.102" ], 
-  "main" : "./lib/proxy-hem.js",
-  "bin": { "proxy-hem": "./bin/proxy-hem" },
-  "dependencies" : { 
+  },
+  "engine": [
+    "node >=0.1.102"
+  ],
+  "main": "./lib/proxy-hem.js",
+  "bin": {
+    "proxy-hem": "index.js"
+  },
+  "dependencies": {
     "coffee-script": "~1.2.0",
-    "http-proxy":    "~0.8.0",
-    "hem":           "~0.1.8",
-	"optimist":      "~0.2.6"
+    "http-proxy": "~0.8.0",
+    "hem": "~0.2.9",
+    "optimist": "~0.2.6"
   }
 }

@@ -9,9 +9,8 @@ BACKENDS =
 		host: 'localhost'
 		port: process.env.PORT or argv.port or 9294
 	API:
-		host: 'localhost'
-		port: 4000
-		https: true
+		host: 'api.go-versus.com'
+		port: 4001
 
 	
 getBackendForRequest = (req) ->
@@ -40,6 +39,7 @@ ProxyHem =
 
 		proxyServer = httpProxy.createServer (req, res, proxy) ->
 			backend = getBackendForRequest req
+			console.log 'routing', req.url, 'to', backend.host, backend.port
 			proxy.proxyRequest req, res, backend
 
 		proxyServer.listen 3000, ->
