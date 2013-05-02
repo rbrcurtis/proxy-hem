@@ -1,7 +1,7 @@
 {
   "name": "proxy-hem",
   "description": "All the awesome of HEM with a proxy for any API urls",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "brec-c",
   "licenses": [
     {
