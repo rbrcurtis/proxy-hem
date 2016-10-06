@@ -9,8 +9,8 @@ BACKENDS =
 		host: 'localhost'
 		port: process.env.PORT or argv.port or 9294
 	API:
-		host: '198.199.85.150'
-		port: 80
+		host: 'localhost'
+		port: 4000
 
 	
 getBackendForRequest = (req) ->
